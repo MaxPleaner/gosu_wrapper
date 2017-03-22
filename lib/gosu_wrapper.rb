@@ -25,9 +25,9 @@ class GosuWrapper
   end
 
   def add_default_helpers
-    add_helper :div_window_into,  GridHelpers.div_window_into
-    add_helper :div_section_into, GridHelpers.div_section_into
-    add_helper :draw_grid,        GridHelpers.draw_grid
+    add_helper :div_window_into,  &GridHelpers.div_window_into
+    add_helper :div_section_into, &GridHelpers.div_section_into
+    add_helper :draw_grid,        &GridHelpers.draw_grid
   end
 
   # Delegate "set_<attr>" setters to window
