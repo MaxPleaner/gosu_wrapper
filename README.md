@@ -150,7 +150,7 @@ They can be called with `#call_helper(name_sym, *args, **keywords, &blk)`
 
 The required parameters differ between the helpers.
 
-1. `div_window_into(num_cols:, num_rows:, margin:)`  
+1. `div_window_into(num_cols:, num_rows:, margin:)` 
    - splits the window into a grid but doesn't draw it
    - returns a matrix-like hash which can be passed to `draw_grid` 
      as the `sections` argument
