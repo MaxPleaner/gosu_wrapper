@@ -1,7 +1,7 @@
 class GosuWrapper
   class GridHelpers
 
-    def self.div_windo_into
+    def self.div_window_into
       Proc.new do |num_cols:, num_rows:, margin:|
         call_helper :div_section_into, {
           start_x: 0,
