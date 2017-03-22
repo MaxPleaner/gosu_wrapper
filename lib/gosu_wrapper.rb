@@ -1,8 +1,7 @@
-require 'byebug'
+require 'gosu'
+require 'active_support/all'
 
-require './gosu_wrapper/colors'
-require './gosu_wrapper/buttons'
-require './gosu_wrapper/util'
+Gem.find_files("gosu_wrapper/**/*.rb").each &method(:require)
 
 class GosuWrapper
 

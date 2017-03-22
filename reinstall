@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+Dir.glob("./*.gem").each { |path| `rm #{path}` }
+puts `gem uninstall -x gosu_wrapper`
+puts `gem build gosu_wrapper.gemspec`
+Dir.glob("./*.gem").each { |path| puts `gem install -f #{path}` }

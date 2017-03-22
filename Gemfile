@@ -1,5 +1,2 @@
-source "http://rubygems.org"
-gem 'gosu'
-gem 'chipmunk'
-gem 'gamebox'
-gem "rake"
+source "http://www.rubygems.org"
+gemspec
